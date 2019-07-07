@@ -1,0 +1,190 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+body{
+    background-color: #E1E1E1;
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+
+}
+
+/* CSS de nav */
+#cabecera{
+    background-color: #000039;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    justify-content: flex-end;
+}
+#cabecera #imagen_telefono img{
+    width: 30px;
+    padding: 5px;
+}
+#cabecera #num_telefono p{
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+}
+#cabecera button{
+   align-items: center;
+   border-radius: 4px;
+   border: 2px solid #DBDDE0;
+   margin-right: 20px;
+   padding: 3px;
+   cursor: pointer;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   background-color: #DBDDE0;
+}
+#cabecera button:hover{
+    background-color: whitesmoke;
+}
+
+/* Termina nav */
+
+
+/* CSS logo */
+#logo img{
+    width: 30%;
+    margin: 10px;
+}
+#presentacion #logo{
+    text-align: center;
+}
+#presentacion #imagen_barra{
+    position: absolute;
+    width: 200px;
+    padding: 0px;
+}
+
+/* Termina logo */
+
+
+/* Empieza barra horizontal */
+
+#barra_lateral{
+    background-color: #000039;
+    margin: 15px 10px 10px 10px;
+}
+#barra_lateral ul{
+    text-align: center;
+}
+#barra_lateral ul .opcion{
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    list-style-type: none;
+    display: inline-block;
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+    font-size: 21px;
+}
+#barra_lateral ul .opcion a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin: -10px;
+}
+#barra_lateral ul .opcion a:hover{
+    background-color: #B9B499;
+    color: #000039;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s ease-out 0s;
+}
+
+/* Termina barra horizontal */
+
+/* Barra de busqueda */
+
+#barra_busqueda{
+    margin: 15px 10px 10px 10px;
+    border: 2px solid black;
+    display: inline-grid;
+    grid-template-columns: 240px 200px 160px 80px 160px 90px 100px;
+    grid-template-rows: 240px;
+    
+}
+#barra_busqueda::after{
+    background-color: whitesmoke;
+    opacity: .7;
+}
+#encuentre_prop{
+    /* background-color: brown; */
+    width: 20%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 50px 10px 10px 50px;
+    float: left;
+}
+#botones_busqueda{
+    /* background-color: blueviolet; */
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+#botones_busqueda #venta{
+    margin-left: 75px;
+}
+#botones_busqueda #alquiler{
+    margin-left: 75px;
+}
+#botones_busqueda #alquiler_temp{
+    margin-left: 75px;
+}
+
+/* Termina barra de busqueda */
+
+
+
+
+
+
+
+
+
+
+
+/* #cabecera{
+    width: auto;
+    display: flex;
+    background-color: aqua;
+    margin: 10px;
+}
+#cabecera p{
+    padding: 5px;
+    display: block;
+}
+#cabecera #imagen_telefono img{
+    width: 20px;
+    padding: 5px;
+    display: block;
+}
+#imagen_telefono #num_telefono{
+    display: block;
+    text-align: right; 
+} */
