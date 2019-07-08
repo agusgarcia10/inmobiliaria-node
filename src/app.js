@@ -1,9 +1,9 @@
-const createError = require('http-errors');
-const express = require('express');
-const path = require('path');
-const cookieParser = require('cookie-parser');
-const logger = require('morgan');
-const session = require('express-session');
+var createError = require('http-errors');
+var express = require('express');
+var path = require('path');
+var cookieParser = require('cookie-parser');
+var logger = require('morgan');
+var session = require('express-session');
 
 //Mongoose
 var mongoose = require('mongoose');
@@ -15,7 +15,7 @@ db.once('open', function() {
 console.log('conectado!');
 });
 
-const app = express();
+var app = express();
 
 app.use(session({
     secret: 'palabraClave',
@@ -76,6 +76,8 @@ res.render('error');
 // static files
 
 // listening the server
-app.listen(app.get('port'), () => {
-    console.log('Server on port', app.get('port'));
-});
+// app.listen(app.get('port'), () => {
+//     console.log('Server on port', app.get('port'));
+// });
+
+module.exports = app;

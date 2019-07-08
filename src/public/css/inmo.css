@@ -28,6 +28,7 @@ time, mark, audio, video {
 body{
     background-color: #E1E1E1;
     font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+    /* margin: 15px 10px 10px 10px; */
 
 }
 
@@ -37,30 +38,36 @@ body{
     color: white;
     display: flex;
     align-items: center;
-    margin: 10px;
+    /* margin: 10px; */
     justify-content: flex-end;
 }
 #cabecera #imagen_telefono img{
-    width: 30px;
+    width: 35px;
     padding: 5px;
 }
 #cabecera #num_telefono p{
-    padding: 5px;
+    padding: 18px 5px 5px 5px;
     font-size: 20px;
     font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+    text-align: center;
 }
-#cabecera button{
-   align-items: center;
-   border-radius: 4px;
-   border: 2px solid #DBDDE0;
-   margin-right: 20px;
-   padding: 3px;
-   cursor: pointer;
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight: bold;
-   background-color: #DBDDE0;
+#cabecera #login{
+    text-align: center;
 }
-#cabecera button:hover{
+#cabecera #login a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-radius: 4px;
+    border: 2px solid #DBDDE0;
+    margin-right: 20px;
+    padding: 3px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #DBDDE0;
+}
+#cabecera #login a:hover{
     background-color: whitesmoke;
 }
 
@@ -88,7 +95,7 @@ body{
 
 #barra_lateral{
     background-color: #000039;
-    margin: 15px 10px 10px 10px;
+    /* margin: 15px 10px 10px 10px; */
 }
 #barra_lateral ul{
     text-align: center;
@@ -121,40 +128,50 @@ body{
 
 /* Barra de busqueda */
 
-#barra_busqueda{
+.container-fluid{
     margin: 15px 10px 10px 10px;
-    border: 2px solid black;
-    display: inline-grid;
-    grid-template-columns: 240px 200px 160px 80px 160px 90px 100px;
-    grid-template-rows: 240px;
-    
+    background-color: rgba(149, 149, 149, .3);
+
+    /* border: 2px solid black; */
 }
-#barra_busqueda::after{
-    background-color: whitesmoke;
-    opacity: .7;
-}
-#encuentre_prop{
-    /* background-color: brown; */
-    width: 20%;
+.row #prop{
+    font-size: 40px;
+    margin: 25px 0 25px 0;
     text-align: center;
-    font-size: 32px;
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
     font-weight: bold;
-    padding: 50px 10px 10px 50px;
-    float: left;
+    color: #000039;
+    padding: 5px 0 5px 0;
 }
-#botones_busqueda{
-    /* background-color: blueviolet; */
-    padding-top: 25px;
-    padding-bottom: 15px;
+.row .col .texto{
+    font-size: 18px;
+    text-align: center;
+    /* font-weight: bold; */
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
-#botones_busqueda #venta{
-    margin-left: 75px;
+.row .col{
+    text-align: center;
+    margin: 0px 5px 30px 5px;
 }
-#botones_busqueda #alquiler{
-    margin-left: 75px;
+select{
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 250px;
 }
-#botones_busqueda #alquiler_temp{
-    margin-left: 75px;
+select:focus{
+    outline: none;
+}
+.selector{
+    /* margin:20px auto;         */
+    border:1px solid #959595;
+    /* height:30px; */
+    /* width: 230px; */
+    overflow: hidden;
+    position:relative;
 }
 
 /* Termina barra de busqueda */
