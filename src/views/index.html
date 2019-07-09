@@ -16,249 +16,32 @@
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- FONT AWESOME -->
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+
 </head>
 <body>
-    <!-- CABECERA -->
-    <div id="cabecera">
-        <div id="login">
-            <a href="/login">Login</a>
-        </div>
-        <div id="imagen_telefono">
-            <img src="../img/telefonoblanco.png" alt="Logo teléfono">
-        </div>
-        <div id="num_telefono">
-            <p>2052-4118</p>
-        </div>
-    </div>
-    <!-- TERMINA CABECERA -->
+    <% include partials/cabecera.html %>
+
+    <% include partials/logo.html %>
+
+    <% include partials/nav.html %>
+
+    <% include partials/barra_busqueda.html %>
 
 
-    <!-- LOGO -->
-    <div id="presentacion">
-        <div id="logo">
-            <img src="../img/logogrande.png" alt="Logo de la inmobiliaria">
-        </div>
-        <!-- <div id="edificio">
-                <img src="edificio.png" alt="Logo edificio" width="35%" height="auto">
-        </div> -->
-    </div>
-    <!-- TERMINA LOGO -->
-
-
-    <!-- NAV -->
-    <!-- <div id="imagen_barra">
-        <div id="edificio">
-            <img src="edificio.png" alt="Logo edificio" width="35%" height="auto">
-        </div>
-    </div> -->
-    <nav id="barra_lateral">
-        <ul>
-            <div class="opcion">
-                <li><a href="/">Inicio</a></li>
-            </div>
-            <div class="opcion">
-                <li><a href="/inmuebles">Inmuebles</a>
-                    <!-- <ul>
-                        <li><a href="#">Ventas</a></li>
-                        <li><a href="#">Alquileres</a>
-                            <ul>
-                                <li><a href="#">Alquiler</a></li>
-                                <li><a href="#">Alquiler temporal</a></li>
-                            </ul>
-                        </li>
-                    </ul> -->
-                </li>
-            </div>
-            <div class="opcion">
-                <li><a href="/servicios">Servicios</a></li>
-            </div>
-            <div class="opcion">
-                <li><a href="/nosotros">Nosotros</a></li>
-            </div>
-            <div class="opcion">
-                <li><a href="/contacto">Contacto</a></li>
-            </div>
-        </ul>
-    </nav>
-    <!-- TERMINA NAV -->
-
-
-    <!-- Barra de busqueda -->
-    <div class="container-fluid">
+    <footer class="container-fluid" style="background-color: aqua">
         <div class="row">
-            <div class="col">
-                <p id="prop">Encuentre su propiedad</p>
+            <div class="col-4">
+                <img src="../public/img/tel.png" alt="Smartphone" width="auto" height="auto">
+                <p id="llamar">Llámenos</p>
+                <br>
+                <p id="cel_nacho">+54 1154555533</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <p class="texto">Propiedad</p>
-                <select name="tipo_prop" class="selector" style="width: 155px; height: 35px;">
-                    <option value="1">Campos</option>
-                    <option value="2">Casas</option>
-                    <option value="3">Casa con local</option>
-                    <option value="4">Casa quinta</option>
-                    <option value="5">Chalets</option>
-                    <option value="6">Cocheras</option>
-                    <option value="7">Countries/Barrios cerrados</option>
-                    <option value="8">Depósitos</option>
-                    <option value="9">Departamentos</option>
-                    <option value="10">Duplex</option>
-                    <option value="11">Emprendimientos</option>
-                    <option value="12">Estacionamiento</option>
-                    <option value="13">Fondo de comercio</option>
-                    <option value="14">Galpón</option>
-                    <option value="15">Garaje</option>
-                    <option value="16">Local</option>
-                    <option value="17">Oficina</option>
-                    <option value="18">PH</option>
-                    <option value="19">Piso</option>
-                    <option value="20">Semipiso</option>
-                    <option value="21">Terrenos</option>
-                </select>
-            </div>
-            <div class="col">
-                <p class="texto">Provincia</p>
-                <select name="provincia" class="selector" style="width: 150px;height: 35px;">
-                    <option value="1">Buenos Aires</option>
-                    <option value="2">Catamarca</option>
-                    <option value="3">Chaco</option>
-                    <option value="4">Chubut</option>
-                    <option value="5">Córdoba</option>
-                    <option value="6">Corrientes</option>
-                    <option value="7">Entre Ríos</option>
-                    <option value="8">Formosa</option>
-                    <option value="9">Jujuy</option>
-                    <option value="10">La Pampa</option>
-                    <option value="11">La Rioja</option>
-                    <option value="12">Mendoza</option>
-                    <option value="13">Misiones</option>
-                    <option value="14">Neuquén</option>
-                    <option value="15">Río Negro</option>
-                    <option value="16">Salta</option>
-                    <option value="17">San Juan</option>
-                    <option value="18">San Luis</option>
-                    <option value="19">Santa Cruz</option>
-                    <option value="20">Santa Fé</option>
-                    <option value="21">Santiago del Estero</option>
-                    <option value="22">Tierra del Fuego</option>
-                    <option value="23">Tucumán</option>
-                </select>
-            </div>
-            <div class="col">
-                <p class="texto">Zona</p>
-                <select name="zona" class="selector" style="width: 150px; height: 35px;">
-                    <option value="1">CABA</option>
-                </select>
-            </div>
-            <div class="col">
-                <p class="texto">Barrio</p>
-                <select name="barrio" class="selector" style="width: 150px; height: 35px;">
-                    <option value="1">Agronomía</option>
-                    <option value="2">Almagro</option>
-                    <option value="3">Balvanera</option>
-                    <option value="4">Barracas</option>
-                    <option value="5">Belgrano</option>
-                    <option value="6">Boedo</option>
-                    <option value="7">Caballito</option>
-                    <option value="8">Chacarita</option>
-                    <option value="9">Coghlan</option>
-                    <option value="10">Colegiales</option>
-                    <option value="11">Constitución</option>
-                    <option value="12">Flores</option>
-                    <option value="13">Floresta</option>
-                    <option value="14">La Boca</option>
-                    <option value="15">La Paternal</option>
-                    <option value="16">Liniers</option>
-                    <option value="17">Mataderos</option>
-                    <option value="18">Microcentro</option>
-                    <option value="19">Monte Castro</option>
-                    <option value="20">Monserrat</option>
-                    <option value="21">Nueva Pompeya</option>
-                    <option value="22">Núnez</option>
-                    <option value="23">Palermo</option>
-                    <option value="24">Parque Avellaneda</option>
-                    <option value="25">Parque Chacabuco</option>
-                    <option value="26">Parque Chas</option>
-                    <option value="27">Parque Patricios</option>
-                    <option value="28">Puerto Madero</option>
-                    <option value="29">Recoleta</option>
-                    <option value="30">Retiro</option>
-                    <option value="31">Saavedra</option>
-                    <option value="32">San Cristóbal</option>
-                    <option value="33">San Nicolás</option>
-                    <option value="34">San Telmo</option>
-                    <option value="35">Vélez Sársfield</option>
-                    <option value="36">Versalles</option>
-                    <option value="37">Villa Crespo</option>
-                    <option value="38">Villa del Parque</option>
-                    <option value="39">Villa Devoto</option>
-                    <option value="40">Villa General Mitre</option>
-                    <option value="41">Villa Lugano</option>
-                    <option value="42">Villa Luro</option>
-                    <option value="43">Villa Ortúzar</option>
-                    <option value="44">Villa Pueyrredón</option>
-                    <option value="45">Villa Real</option>
-                    <option value="46">Villa Riachuelo</option>
-                    <option value="47">Villa Santa Rita</option>
-                    <option value="48">Villa Soldati</option>
-                    <option value="49">Villa Urquiza</option>
-                </select>
-            </div>
-            <div class="col">
-                <p class="texto">Ambientes</p>
-                <select name="cant_ambiente" class="selector" style="width: 150px; height: 35px;">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4 o más</option>
-                </select>
-            </div>
-            <div class="col">
-                <p class="texto">Moneda</p>
-                <select name="moneda" class="selector" style="width: 150px;height: 35px;">
-                    <option value="1">U$D</option>
-                    <option value="2">$</option>
-                </select>
-            </div>
-        </div>
-    </div>
-    <!-- <div id="botones_busqueda">
-        <button id="venta">VENTA</button>
-        <button id="alquiler">ALQUILER</button>
-        <button id="alquiler_temp">ALQUILER TEMPORARIO</button>
-    </div> -->
-    <!-- Termina barra de busqueda -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </footer>
 
 
 
