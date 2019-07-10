@@ -173,6 +173,16 @@ select:focus{
     overflow: hidden;
     position:relative;
 }
+.col #buscar{
+    background-color: #000039;
+    border-color: #000039;
+}
+.col #buscar:hover{
+    background-color: #000080;
+}
+#tel i{
+    width: 500px;
+}
 
 /* Termina barra de busqueda */
 
