@@ -126,11 +126,11 @@ body{
 
 /* Termina barra horizontal */
 
+
 /* Barra de busqueda */
 
 .container-fluid{
     margin: 15px 10px 10px 10px;
-    background-color: rgba(149, 149, 149, .3);
 
     /* border: 2px solid black; */
 }
@@ -176,19 +176,101 @@ select:focus{
 .col #buscar{
     background-color: #000039;
     border-color: #000039;
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 .col #buscar:hover{
     background-color: #000080;
 }
-#tel i{
-    width: 500px;
+/* .col #buscar:focus{
+    border: none;
+    outline: none;
+} */
+.row #botones_va{
+    margin-bottom: 15px;
+    background-color: #000039;
+    border-color: #000039;
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif; 
+    font-size: 25px;
 }
 
 /* Termina barra de busqueda */
 
 
+/* Propiedades destacadas */
+
+.row #prop_dest{
+    margin-left: 25px;
+    margin-top: 15px;
+    font-size: 36px;
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.row #img_bot_1{
+    border: 5px solid #cb4539;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+.row #img_bot_1 h2{
+    /* font-size: 26px; */
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+}
+.row #img_bot_1 img{
+    margin-bottom: 10px;
+}
+.row #img_bot_1 p{
+    margin: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+.row #img_bot_1 a{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: #000039;
+}
+.row #img_bot_1 a:hover{
+    font-size: 19px;
+    color: #000039;
+    text-decoration-color: #000039;
+}
+
+/* Termina prop. destacadas */
 
 
+/* Footer */
+footer{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    /* font-family: 'EB Garamond', Arial, Helvetica, sans-serif; */
+}
+.row #contacto{
+    font-size: 25px;
+    padding: 15px;
+    text-align: center;
+}
+.row #tel{
+    /* padding-top: 20px; */
+    padding-left: 15px;
+    text-align: center;
+}
+.row #copy{
+    font-size: 14px;
+    margin-bottom: 0;
+    margin: 25px 0 0 0;
+    padding-bottom: 0;
+    text-align: left;
+}
+.row #tel1{
+    padding: 20px 0 0 0;
+    padding-left: 15px;
+    text-align: center;
+}
+
+/* Termina footer */
 
 
 

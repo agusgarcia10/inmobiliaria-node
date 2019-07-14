@@ -13,6 +13,10 @@ router.get('/inmuebles', (req, res) => {
     res.render('inmuebles.html', { title: 'Inmuebles' });
 });
 
+router.get('/inmuebles/departamento-en-venta-botanical-malabia', (req, res) => {
+    res.render('inmuebles.html', { title: 'Inmuebles' });
+})
+
 router.get('/servicios', (req, res) => {
     res.render('servicios.html', { title: 'Servicios' });
 });
