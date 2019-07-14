@@ -6,27 +6,27 @@ router.get('/', (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-    res.render('login.html', { title: 'Login' });
+    res.render('login.html', { title: 'Ignacio V. García Propiedades' });
 });
 
 router.get('/inmuebles', (req, res) => {
-    res.render('inmuebles.html', { title: 'Inmuebles' });
+    res.render('inmuebles.html', { title: 'Ignacio V. García Propiedades' });
 });
 
 router.get('/inmuebles/departamento-en-venta-botanical-malabia', (req, res) => {
-    res.render('inmuebles.html', { title: 'Inmuebles' });
+    res.render('inmuebles_botanical.html', { title: 'Ignacio V. García Propiedades' });
 })
 
 router.get('/servicios', (req, res) => {
-    res.render('servicios.html', { title: 'Servicios' });
+    res.render('servicios.html', { title: 'Ignacio V. García Propiedades' });
 });
 
 router.get('/nosotros', (req, res) => {
-    res.render('nosotros.html', { title: 'Nosotros' });
+    res.render('nosotros.html', { title: 'Ignacio V. García Propiedades' });
 });
 
 router.get('/contacto', (req, res) => {
-    res.render('contacto.html', { title: 'Contacto' });
+    res.render('contacto.html', { title: 'Ignacio V. García Propiedades' });
 });
 
 module.exports = router;

@@ -241,6 +241,68 @@ select:focus{
 /* Termina prop. destacadas */
 
 
+/* Redirecciones de propiedades destacadas */
+
+.row a{
+    color: black;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.row a:hover{
+    color: black;
+}
+.row h1{
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    /* font-size: 30px; */
+}
+.row .carousel-inner{
+    margin-top: 15px;
+}
+.row #detalles-prop{
+    text-align: center;
+    background-color: #cb4539;
+    height: 40px;
+    border-radius: 5px;
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding-top: 2px;
+    color: white;
+}
+.row .titulo{
+    font-weight: bold;
+    /* font-family: 'EB Garamond', Arial, Helvetica, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-size: 18px; */
+}
+.row .descripcion{
+    /* font-family: 'EB Garamond', Arial, Helvetica, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15.5px;
+}
+.row .info-basica{
+    /* margin-top: 40px; */
+    margin-left: 40px;
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.row .descripcion-basica{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+.row .descripcion-basica-ad{
+    margin-bottom: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+/* Termina */
+
+
 /* Footer */
 footer{
     margin-bottom: 0;
@@ -256,6 +318,8 @@ footer{
     /* padding-top: 20px; */
     padding-left: 15px;
     text-align: center;
+    /* font-size: 16px; */
+    /* padding-top: 5px; */
 }
 .row #copy{
     font-size: 14px;
@@ -268,6 +332,7 @@ footer{
     padding: 20px 0 0 0;
     padding-left: 15px;
     text-align: center;
+    /* font-size: 16px; */
 }
 
 /* Termina footer */
