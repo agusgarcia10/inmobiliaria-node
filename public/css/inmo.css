@@ -1,0 +1,437 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+body{
+    background-color: #E1E1E1;
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+    /* margin: 15px 10px 10px 10px; */
+
+}
+
+/* CSS de nav */
+#cabecera{
+    background-color: #000039;
+    color: white;
+    display: flex;
+    align-items: center;
+    /* margin: 10px; */
+    justify-content: flex-end;
+}
+#cabecera #imagen_telefono img{
+    width: 35px;
+    padding: 5px;
+}
+#cabecera #num_telefono p{
+    padding: 18px 5px 5px 5px;
+    font-size: 20px;
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#cabecera #login{
+    text-align: center;
+}
+#cabecera #login a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-radius: 4px;
+    border: 2px solid #DBDDE0;
+    margin-right: 20px;
+    padding: 3px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #DBDDE0;
+}
+#cabecera #login a:hover{
+    background-color: whitesmoke;
+}
+#cabecera #signup{
+    text-align: center;
+}
+#cabecera #signup a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-radius: 4px;
+    border: 2px solid #DBDDE0;
+    margin-right: 20px;
+    padding: 3px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #DBDDE0;
+}
+#cabecera #signup a:hover{
+    background-color: whitesmoke;
+}
+
+/* Termina nav */
+
+
+/* CSS logo */
+#logo img{
+    width: 30%;
+    margin: 10px;
+}
+#presentacion #logo{
+    text-align: center;
+}
+#presentacion #imagen_barra{
+    position: absolute;
+    width: 200px;
+    padding: 0px;
+}
+
+/* Termina logo */
+
+
+/* Empieza barra horizontal */
+
+#barra_lateral{
+    background-color: #000039;
+    /* margin: 15px 10px 10px 10px; */
+}
+#barra_lateral ul{
+    text-align: center;
+}
+#barra_lateral ul .opcion{
+    color: white;
+    margin: 15px;
+    padding: 10px;
+    list-style-type: none;
+    display: inline-block;
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+    font-size: 21px;
+}
+#barra_lateral ul .opcion a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin: -10px;
+}
+#barra_lateral ul .opcion a:hover{
+    background-color: #B9B499;
+    color: #000039;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s ease-out 0s;
+}
+
+/* Termina barra horizontal */
+
+
+/* Barra de busqueda */
+
+.container-fluid{
+    margin: 15px 10px 10px 10px;
+
+    /* border: 2px solid black; */
+}
+.row #prop{
+    font-size: 40px;
+    margin: 25px 0 25px 0;
+    text-align: center;
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #000039;
+    padding: 5px 0 5px 0;
+}
+.row .col .texto{
+    font-size: 18px;
+    text-align: center;
+    /* font-weight: bold; */
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.row .col{
+    text-align: center;
+    margin: 0px 5px 30px 5px;
+}
+select{
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 250px;
+}
+select:focus{
+    outline: none;
+}
+.selector{
+    /* margin:20px auto;         */
+    border:1px solid #959595;
+    /* height:30px; */
+    /* width: 230px; */
+    overflow: hidden;
+    position:relative;
+}
+.col #buscar{
+    background-color: #000039;
+    border-color: #000039;
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.col #buscar:hover{
+    background-color: #000080;
+}
+/* .col #buscar:focus{
+    border: none;
+    outline: none;
+} */
+.row #botones_va{
+    margin-bottom: 15px;
+    background-color: #000039;
+    border-color: #000039;
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif; 
+    font-size: 25px;
+}
+
+/* Termina barra de busqueda */
+
+
+/* Propiedades destacadas */
+
+.row #prop_dest{
+    margin-left: 25px;
+    margin-top: 15px;
+    font-size: 36px;
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.row #img_bot_1{
+    border: 5px solid #cb4539;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+.row #img_bot_1 h2{
+    /* font-size: 26px; */
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+}
+.row #img_bot_1 img{
+    margin-bottom: 10px;
+}
+.row #img_bot_1 p{
+    margin: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+.row #img_bot_1 a{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: #000039;
+}
+.row #img_bot_1 a:hover{
+    font-size: 19px;
+    color: #000039;
+    text-decoration-color: #000039;
+}
+
+/* Termina prop. destacadas */
+
+
+/* Redirecciones de propiedades destacadas */
+
+.row a{
+    color: black;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.row a:hover{
+    color: black;
+}
+.row h1{
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    /* font-size: 30px; */
+}
+.row .carousel-inner{
+    margin-top: 15px;
+}
+.row #detalles-prop{
+    text-align: center;
+    background-color: #cb4539;
+    height: 40px;
+    border-radius: 5px;
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding-top: 2px;
+    color: white;
+}
+.row .titulo{
+    font-weight: bold;
+    /* font-family: 'EB Garamond', Arial, Helvetica, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-size: 18px; */
+}
+.row .descripcion{
+    /* font-family: 'EB Garamond', Arial, Helvetica, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15.5px;
+}
+.row .info-basica{
+    /* margin-top: 40px; */
+    margin-left: 40px;
+    font-family: 'EB Garamond', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.row .descripcion-basica{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+.row .descripcion-basica-ad{
+    margin-bottom: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+/* Termina */
+
+
+/* Footer */
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    /* font-family: 'EB Garamond', Arial, Helvetica, sans-serif; */
+}
+.footer-container{
+    width: 100%;
+    /* background-color: black; */
+}
+.footer-main{
+    width: 98%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-main .footer-columna{
+    width: calc(100% / 2);
+    text-align: center;
+}
+.footer-copy-redes{
+    width: 100%;
+}
+.copy-redes-main{
+    width: 98%;
+    max-width: 1000px;
+    /* padding: 0 10px 5px 0; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.copy-redes-main .footer-copy{
+    width: 70%;
+}
+.footer-copy p{
+    /* margin: 0; */
+    /* margin-left: -120px; */
+    /* padding: 0; */
+    font-size: 14px;
+}
+.copy-redes-main .footer-redes{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-redes a{
+    /* margin-left: 550px; */
+    margin-bottom: 10px;
+}
+
+/*footer .container-fluid{
+    height: 100%;
+}
+.row #contacto{
+    font-size: 25px;
+    padding: 15px;
+    text-align: center;
+}
+.row #tel{
+    padding-top: 20px;
+    padding-left: 15px;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 5px;
+}
+.row #copy{
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin: 25px 0 0 0;
+    padding-bottom: 0;
+    text-align: left;
+}
+.row #tel1{
+    padding: 20px 0 0 0;
+    padding-left: 15px;
+    text-align: center;
+    font-size: 16px;
+} */
+
+/* Termina footer */
+
+
+
+
+
+
+
+/* #cabecera{
+    width: auto;
+    display: flex;
+    background-color: aqua;
+    margin: 10px;
+}
+#cabecera p{
+    padding: 5px;
+    display: block;
+}
+#cabecera #imagen_telefono img{
+    width: 20px;
+    padding: 5px;
+    display: block;
+}
+#imagen_telefono #num_telefono{
+    display: block;
+    text-align: right; 
+} */
